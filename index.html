@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="En Paramo Bikes creemos en las alternativas, existen mejores formas de transportarse en la ciudad: sin saturar los espacios urbanos de vehículos y de una manera más ágil, saludable y entretenida.">
+    <meta name="keywords" content="bicicletas, electricas, movilidad, plegables, repuestos, gravel, sustentable, venta, productos nuevos, momopatines, blog">
+
+    <title>Páramo Bikes - Soluciones en movilidad liviana</title>
+    <link rel="stylesheet" href="./assets/css/styles.css"> <!-- HEAD. Enlace a styles.css --> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,600;1,300&family=Roboto:wght@100;400;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  
+    <header class="containerHeader"> <!--ENCABEZADO SOLO CON MENU (falta logo)-->
+        
+        <div class="logo">
+            <a href="./index.html"><img src="./assets/images/logo3.png" alt="paramo bicicletas"></a>
+        </div>
+
+        <nav class="menu">
+            <ul>
+                <li><a href="./index.html">INICIO</a></li>
+                <li><a href="./views/vehiculos.html">VEHÍCULOS</a></li>
+                <li><a href="./views/tienda.html">TIENDA</a></li>
+                <li><a href="./views/blog.html">BLOG</a> </li>
+                <li><a href="./views/posventa.html">POSVENTA</a></li>
+                <li><a href="./views/contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+    
+    </header>
+
+    <hr style="border:solid .1px rgb(60, 60, 60)">
+    
+<h1>Movilidad sustentable pensada para la ciudad</h1>
+<!-- SECCIÓN 1. Vehículos, carrousel -->
+
+
+<!-- Carrousel -->
+<div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            <img src="./assets/images/20210415-123914_Slider.jpg" style="width:100%" alt="bicicleta fixie">
+            <div class="text">
+                <p style="font-weight: bold; font-size: 40px;">BICICLETAS</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam hic, doloribus excepturi fugiat .</p>
+                <!-- BOTÓN. VEHÍCULOS-->
+                <br>
+                <button><a href="./views/vehiculos.html">VER MÁS</a></button>
+            </div>
+        </div>
+    
+        <div class="mySlides fade">
+            <img src="./assets/images/20210415-114719_Link-A7.jpg" style="width:100%" alt="bicicleta plegable roja tern"> 
+            <div class="text">
+                <p style="font-weight: bold; font-size: 40px;">PLEGABLES</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam hic, doloribus excepturi fugiat .</p>
+                <!-- BOTÓN. VEHÍCULOS-->
+                <br>
+                <button><a href="./views/vehiculos.html">VER MÁS</a></button>
+            </div>
+        </div>
+    
+        <div class="mySlides fade">
+            <img src="./assets/images/20210415-120418_Ninebot.jpg" style="width:100%" alt="bicicleta electrica">
+            <div class="text">
+                <p style="font-weight: bold; font-size: 40px;">ELECTRICAS</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam hic, doloribus excepturi fugiat .</p>
+                <!-- BOTÓN. VEHÍCULOS-->
+                <br>
+                <button><a href="./views/vehiculos.html">VER MÁS</a></button>
+            </div>
+        </div>
+    
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+    <br>
+    
+    <!-- The dots/circles -->
+<div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<script>
+        var slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 5000); // Change image every 2 seconds
+        }
+</script>
+        
+<br>
+
+
+<!-- SECCIÓN 2. Novedades -->
+<hr style="color: rgb(82, 82, 82);">
+<h2 style="display:inline-flexbox;">LO ÚLTIMO</h2>
+<br><br>
+
+<section class="containerSeccion2">
+        
+        <!-- 1/3 novedades de noticias de blog: 3 fotos con un breve texto debajo de cada una, las fotos en fila-->
+            <div class="col-sm-4">
+                <div class="ancho-texto card margin-large-b">
+                    <div class="margin-b">
+                        <img style="width: 500px; height: 300px;" src="./assets/images/20191115-051352_W-afDr7Wi-lK2M5KIMcaKHWKY.jpg" class="full" alt="cubiertas llantas">
+                    </div>
+                    <h3 class="title margin-b"><span style="font-size: 25px; text-decoration: underline;">CUBIERTAS</span>. La guía definitiva. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo at dolores sequi est veritatis, earum eaque </h3>
+                    <!-- BOTÓN. BLOG-->
+                    <button><a href="./views/blog.html">IR AL BLOG</a></button>
+                </div>
+            </div>
+        <!-- 2/3 novedades de noticias de blog: 3 fotos con un breve texto debajo de cada una, las fotos en fila-->
+              <div class="col-sm-4">
+                <div class="ancho-texto card margin-large-b">
+                    <div class="margin-b">
+                        <img style="width: 500px; height: 300px;" src="./assets/images/20190317-084841_20180201-011509-1.jpg" class="full" alt="bicicletas plegables">
+                    </div>
+                    <h3 class="title margin-b"><span style="font-size: 25px; text-decoration: underline;">PLEGABLES</span>. La guía definitiva. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo at dolores sequi est veritatis, earum eaque </h3>
+                    <!-- BOTÓN. BLOG-->
+                    <button><a href="./views/blog.html">IR AL BLOG</a></button>
+                </div>
+            </div>
+        <!-- 3/3 novedades de noticias de blog: 3 fotos con un breve texto debajo de cada una, las fotos en fila-->
+            <div class="col-sm-4">
+                <div class="ancho-texto card margin-large-b">
+                    <div class="margin-b">
+                        <img style="width: 500px; height: 300px;" src="./assets/images/20171205-105435_Det.jpg" class="full" alt="shifter shimano campagnolo">
+                    </div>
+                    <h3 class="title margin-b"><span style="font-size: 25px; text-decoration: underline;">SHIFTERS</span>. La guía definitiva. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo at dolores sequi est veritatis, earum eaque </h3>
+                    <!-- BOTÓN. BLOG-->
+                    <button><a href="./views/blog.html">IR AL BLOG</a></button>
+                </div>
+            </div>
+        
+        
+</section>
+
+<br><br>
+
+
+
+<!-- SECCIÓN 3. Productos destacados -->
+
+<hr style="color: rgb(82, 82, 82);">
+<h2 style="display:inline-flexbox;">PRODUCTOS DESTACADOS</h2>
+<br><br>    
+
+<section class="containerSeccion3">
+
+        <!-- 1/4 productos destacados-->
+        <div class="col-sm-4">
+            <div>
+                <div class="margin-b">
+                    <img class="bordeProd" style="width: 350px; height: 100%;" src="./assets/images/20200327-120203_1.jpg" class="full" alt="frenos cuero">
+                </div>
+                <div>
+                    <h3 ><a class="prodDest" href="./assets/tienda.html">VP-712 DETALLE EN CUERO</a></h3>
+                    <h3 class="precios">$  2.500,00</h3>
+                </div>
+                <br>
+                <!-- BOTÓN. BLOG-->
+                <button><a href="./assets/tienda.html">IR A TIENDA</a></button>
+            </div>
+        </div>
+
+        <!-- 2/4 productos destacados-->
+        <div class="col-sm-4">
+            <div>
+                <div class="margin-b">
+                    <img class="bordeProd" style="width: 350px; height: 100%;" src="./assets/images/20200509-081804_Mitas-gripper-prod.jpg" class="full" alt="llantas tubeless">
+                </div>
+                <div>
+                    <h3 ><a class="prodDest" href="./assets/tienda.html">GRIPPER 700X35</a></h3>
+                    <h3 class="precios">$  2.500,00</h3>
+                </div>
+                <br>
+                <!-- BOTÓN. BLOG-->
+                <button><a href="./assets/tienda.html">IR A TIENDA</a></button>
+            </div>
+        </div>
+
+        <!-- 3/4 productos destacados-->
+        <div class="col-sm-4">
+            <div>
+                <div class="margin-b">
+                    <img class="bordeProd" style="width: 350px; height: 100%;" src="./assets/images/133_455_cual_queres.jpg" class="full" alt="linga candado kriptoflex">
+                </div>
+                <div>
+                    <h3 ><a class="prodDest" href="./assets/tienda.html">LINGA KRYPTOFLEX 410</a></h3>
+                    <h3 class="precios">$  2.500,00</h3>
+                </div>
+                <br>
+                <!-- BOTÓN. BLOG-->
+                <button><a href="./assets/tienda.html">IR A TIENDA</a></button>
+            </div>
+        </div>
+
+        <!-- 4/4 productos destacados-->
+        <div class="col-sm-4">
+            <div>
+                <div class="margin-b">
+                    <img class="bordeProd" style="width: 350px; height: 100%;" src="./assets/images/20210120-044642_1.jpg" class="full" alt="manometro micorbar>
+                </div>
+                <div>
+                    <h3 ><a class="prodDest" href="./assets/tienda.html">MICORBAR</a></h3>
+                    <h3 class="precios">$  2.500,00</h3>
+                </div>
+                <br>
+                <!-- BOTÓN. BLOG-->
+                <button><a href="./assets/tienda.html">IR A TIENDA</a></button>
+            </div>
+        </div>
+
+
+</section>
+
+<br><br><br>
+
+
+
+<!-- SECCIÓN 4. PROMOCIONES -->
+<section class="seccionPromos">
+    <h2 style="display:inline-flexbox;">PROMOCIONES</h2>
+    <br><br> 
+    <div class="containerPromos">
+            
+                <div>
+                    <a href="ahora12"><img src="./assets/images/ahora1.png" alt="ahora 12"></a>
+                    <br><br>
+                    <h4>12 cuotas sin interés</h4>
+                </div>
+                <div>
+                    <a href="ahora12_2"><img src="./assets/images/ahora2.png" alt="ahora 12"></a>
+                    <br><br>
+                    <h4>18 cuotas fijas</h4>
+                </div>
+                <div>
+                    <a href="itau"><img src="./assets/images/ahora3.png" alt="banco itau"></a>
+                    <br><br>
+                    <h4>3 cuotas sin interés</h4>
+                </div>
+                <div>
+                    <a href="mlibre"><img src="./assets/images/ahora4.svg" alt="mercado pago"></a>
+                    <br><br>
+                    <h4>Promociones vigentes de MP</h4>
+                </div>
+    </div>
+
+    <!-- BOTÓN. BLOG-->
+    <button><a href="./assets/tienda.html">VER PROMOCIONES</a></button>
+
+</section>
+
+
+
+<!-- FOOTER-------------------------->
+<section>
+<hr style="color:white;">
+
+    <footer class="footer">
+        
+        <!-- FOOTER. Dejar EMail para recibir newsletter/novedades  -->
+            <br>
+            <h5>SÉ PARTE DEL MOVIMIENTO</h5>
+            <br>
+            <h6>Enterate de las últimas novedades!</p>
+            <input class="inputEmail" type="text" name="email" placeholder="Email" id="">
+            <input class="inputEnviar" type="submit" value="ENVIAR">
+            <br><br>
+        <!-- FOOTER. Redes sociales  -->
+            <h5>SEGUINOS</h5><br>
+
+                <img src="" alt=""> <!--FACEBOOK LOGO-->
+                <img src="" alt=""> <!--INSTAGRAM LOGO-->
+                <img src="" alt=""> <!--TWITTER LOGO-->
+    
+        <!-- Copyright  -->
+        <h6 class="copyright">Términos y Condiciones / Defensa del Consumidor</h6>    
+        <h6 class="copyright">Copyright © 2021 | PÁRAMO BIKES. Todos los derechos reservados</h6>
+
+     
+    </footer>
+</section>
+
+
+</body>
+</html>
